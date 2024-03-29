@@ -43,7 +43,11 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
- }
+}
+
+section{
+    padding:3rem 2rem;
+} 
 
 .message{
     position: sticky;
@@ -157,4 +161,4 @@ html{
 .form-container form p a:hover{
     text-decoration: underline;
 }
- 
+
