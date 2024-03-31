@@ -27,9 +27,17 @@ if(isset($_POST['add_product'])){
       $add_product_query = mysqli_query($conn, "INSERT INTO `products`(name, price, image) VALUES('$name', '$price', '$image')") or die('query failed');
       
       if($add_product_query){
+         if($image_size > 2000000){
+            $message[] = 'image size is too large';
+         }else{
          move_uploaded_file($image_tmp_name, $image_folder);
             $message[] = 'product added successfully!';
    }
+}else{
+   $message[] = 'product could not be added!';
+}
+   }
+}
 
 ?>
 
@@ -71,6 +79,35 @@ if(isset($_POST['add_product'])){
 
 <!-- product CRUD section ends -->
 
+<!-- show products  -->
+
+<section class="show-products">
+
+   <div class="box-container">
+
+      <?php
+         $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
+         if(mysqli_num_rows($select_products) > 0){
+            while($fetch_products = mysqli_fetch_assoc($select_products)){
+      ?>
+
+<div class="box">
+         <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
+         <div class="name"><?php echo $fetch_products['name']; ?></div>
+         <div class="price">$<?php echo $fetch_products['price']; ?>/-</div>
+         <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">update</a>
+         <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+      </div>
+      <?php
+            }
+         }
+      }else{
+         echo '<p class="empty">no products added yet!</p>';
+      }
+      ?>
+   </div>
+
+</section>
 
 
 
