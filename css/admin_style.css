@@ -195,6 +195,12 @@ section{
     display: none;
     animation:fadeIn .2s linear;
  }
+ .header .flex .account-box.active{
+   display: inline-block;
+}
+
+
+ 
  
  .header .flex .account-box.active{
     display: inline-block;
