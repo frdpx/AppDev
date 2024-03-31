@@ -28,12 +28,16 @@ if(!isset($admin_id)){
 
 </head>
 <body>
-
+   
 <?php include 'admin_header.php'; ?>
 
+<!-- admin dashboard section starts  -->
+
 <section class="dashboard">
+
    <h1 class="title">dashboard</h1>
-      <div class="box-container">
+
+   <div class="box-container">
 
       <div class="box">
          <?php
@@ -50,7 +54,6 @@ if(!isset($admin_id)){
          <p>total pendings</p>
       </div>
 
-      
       <div class="box">
          <?php
             $total_completed = 0;
@@ -83,7 +86,7 @@ if(!isset($admin_id)){
          <h3><?php echo $number_of_products; ?></h3>
          <p>products added</p>
       </div>
-
+ 
       <div class="box">
          <?php 
             $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE user_type = 'user'") or die('query failed');
@@ -119,6 +122,14 @@ if(!isset($admin_id)){
          <h3><?php echo $number_of_messages; ?></h3>
          <p>new messages</p>
       </div>
+
+   </div>
+
+</section>
+
+<!-- admin dashboard section ends -->
+
+
 
 
 
