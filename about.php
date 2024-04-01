@@ -69,9 +69,9 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+            <i class="fas fa-star"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>john Watson</h3>
       </div>
 
       <div class="box">
@@ -84,7 +84,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Emily Hatch</h3>
       </div>
 
       <div class="box">
@@ -97,7 +97,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Greg Holland</h3>
       </div>
 
       <div class="box">
@@ -110,7 +110,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Jennie Law</h3>
       </div>
 
       <div class="box">
@@ -121,9 +121,9 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+            <i class="fas fa-star"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Bruno Jazz</h3>
       </div>
 
       <div class="box">
@@ -134,9 +134,9 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+            <i class="fas fa-star"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Suzy Kim</h3>
       </div>
 
    </div>
