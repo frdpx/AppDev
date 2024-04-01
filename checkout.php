@@ -9,6 +9,7 @@ $user_id = $_SESSION['user_id'];
 if(!isset($user_id)){
    header('location:login.php');
 }
+
 if(isset($_POST['order_btn'])){
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -47,6 +48,7 @@ if(isset($_POST['order_btn'])){
    }
    
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -65,7 +67,7 @@ if(isset($_POST['order_btn'])){
 
 </head>
 <body>
-
+   
 <?php include 'header.php'; ?>
 
 <div class="heading">
@@ -90,7 +92,7 @@ if(isset($_POST['order_btn'])){
       echo '<p class="empty">your cart is empty</p>';
    }
    ?>
-<div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
+   <div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
 
 </section>
 
@@ -149,12 +151,6 @@ if(isset($_POST['order_btn'])){
    </form>
 
 </section>
-
-
-
-
-
-
 
 
 
