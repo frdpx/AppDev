@@ -43,7 +43,7 @@ if(isset($_GET['delete'])){
 
 </head>
 <body>
-
+   
 <?php include 'admin_header.php'; ?>
 
 <section class="orders">
@@ -56,8 +56,7 @@ if(isset($_GET['delete'])){
       if(mysqli_num_rows($select_orders) > 0){
          while($fetch_orders = mysqli_fetch_assoc($select_orders)){
       ?>
-
-<div class="box">
+      <div class="box">
          <p> user id : <span><?php echo $fetch_orders['user_id']; ?></span> </p>
          <p> placed on : <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
          <p> name : <span><?php echo $fetch_orders['name']; ?></span> </p>
@@ -101,4 +100,4 @@ if(isset($_GET['delete'])){
 <script src="js/admin_script.js"></script>
 
 </body>
-</html> 
+</html>

@@ -109,3 +109,4 @@ if(isset($_GET['delete_all'])){
 <script src="js/script.js"></script>
 
 </body>
+</html>
