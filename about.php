@@ -69,7 +69,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
          </div>
          <h3>john Watson</h3>
       </div>
