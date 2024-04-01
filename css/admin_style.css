@@ -287,6 +287,10 @@ section{
    border:var(--border);
 }
 
+.show-products{
+   padding-top: 0;
+}
+
 .show-products .box-container .box{
    text-align: center;
    padding:2rem;
