@@ -86,7 +86,7 @@ if(!isset($admin_id)){
          <h3><?php echo $number_of_products; ?></h3>
          <p>products added</p>
       </div>
- 
+
       <div class="box">
          <?php 
             $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE user_type = 'user'") or die('query failed');
