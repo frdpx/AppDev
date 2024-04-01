@@ -31,6 +31,19 @@ if(!isset($user_id)){
 
 <?php include 'header.php'; ?>
 
+<div class="heading">
+   <h3>search page</h3>
+   <p> <a href="home.php">home</a> / search </p>
+</div>
+
+<section class="search-form">
+   <form action="" method="post">
+      <input type="text" name="search" placeholder="search products..." class="box">
+      <input type="submit" name="submit" value="search" class="btn">
+   </form>
+</section>
+
+<section class="products" style="padding-top: 0;">
 
 
 
