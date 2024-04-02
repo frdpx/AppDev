@@ -28,8 +28,8 @@ if(isset($_GET['delete_all'])){
    header('location:cart.php');
 }
 
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
