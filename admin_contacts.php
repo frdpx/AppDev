@@ -10,9 +10,11 @@ if(!isset($admin_id)){
    header('location:login.php');
 };
 
+
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
    mysqli_query($conn, "DELETE FROM `message` WHERE id = '$delete_id'") or die('query failed');
+
    header('location:admin_contacts.php');
 }
 
@@ -46,7 +48,8 @@ if(isset($_GET['delete'])){
       $select_message = mysqli_query($conn, "SELECT * FROM `message`") or die('query failed');
       if(mysqli_num_rows($select_message) > 0){
          while($fetch_message = mysqli_fetch_assoc($select_message)){
-      
+   
+            
    ?>
    <div class="box">
       <p> user id : <span><?php echo $fetch_message['user_id']; ?></span> </p>
@@ -65,8 +68,6 @@ if(isset($_GET['delete'])){
    </div>
 
 </section>
-
-
 
 
 
